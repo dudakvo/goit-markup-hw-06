@@ -62,7 +62,8 @@
                 <h1 class="hero-title">
                     эффективные решения <br> для вашего бизнеса
                 </h1>
-                <a href="" class="button primary">Заказать услугу</a>               
+              <!--   <a href="" class="button primary" data-open-modal>Заказать услугу</a>-->
+              <button class="button primary" data-open-modal>Заказать услугу</button>
             </div>
         </section>
 
@@ -412,6 +413,64 @@
     </div>
     <p class="copyright">2020 | Developed by GoIT Students </p>
 </footer>
+
+<div class="backdrop is-hidden" data-backdrop>
+    <div class="modal">
+        <form action="">
+            <button class="button-close" data-close-modal> 
+                <svg class="close-icon">
+                    <use href="./images/symbol-defs.svg#close-button"></use>
+                </svg>
+            </button>        
+            <p class="modal-title">
+                Оставьте свои данные, мы вам перезвоним
+            </p>
+
+            <ul class="field-list list">
+                <li>                    
+                    <input type="text" id="name" class="field-element" placeholder=" ">
+                    <label for="name" class="form-label">Имя</label>
+                    <svg class="form-icon" width="12" heigth="12">
+                        <use href="./images/symbol-defs.svg#person-form-icon"></use>
+                    </svg>
+
+                </li>
+                <li>
+                    <input type="tel" id="phone" class="field-element" placeholder=" ">
+                    <label for="phone" class="form-label">Телефон</label> 
+                    <svg class="form-icon" width="13" heigth="13">
+                        <use href="./images/symbol-defs.svg#phone-form-icon"></use>
+                    </svg>               
+                </li>
+                <li>
+                    <input type="email" id="mail" class="field-element" placeholder=" ">
+                    <label for="mail" class="form-label"> Почта</label>
+                    <svg class="form-icon" width="15" heigth="12">
+                        <use href="./images/symbol-defs.svg#email-form-icon"></use>
+                    </svg>
+                </li>
+                <li>
+                    <textarea  id="comments" class="comments field-element" placeholder=" "></textarea>                    
+                    <label for="comments" class="form-label">Комментарий</label>
+                </li>
+            </ul>
+            <div class="form-contracts">
+
+                <label class="contracts-label"> 
+                    <input class="checkbox" type="checkbox" value="true">
+                    <span class="checkbox-icon"></span>                    
+                    Соглашаюсь с рассылкой и принимаю 
+                    <a href="" class="contracts-link">
+                        Условия договора
+                    </a>
+                </label>                                      
+            </div>
+            <button  class="button primary">Отправить</button> 
+        </form>
+    </div>
+</div>
+
+<script src="./js/modal.js"></script>
 
 </body>
 </html>
