@@ -37,6 +37,16 @@ body {
     margin-right: auto;
 }
 
+.input-hidden{
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .button{
     display: block;
     height: 50px;
@@ -844,10 +854,11 @@ footer .icon{
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    background-color: var(--secondary-bgcolor);
 }
 
-.button-filter:hover, .button-filter:focus, .button-filter:active{
-    border: none;
+.button-filter:hover, .button-filter:focus, .button-filter:active, .filter input:checked + .button-filter{
+   /* border: none;*/
     
     background: #2196F3;
     color: #FFFFFF;
@@ -867,10 +878,7 @@ footer .icon{
     overflow: hidden; 
 }
 
-
 .project-description{
-    /*display: flex;*/
-
     opacity: 1;
     position: absolute;
 
@@ -892,8 +900,6 @@ footer .icon{
     
     transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    
 
     background: rgba(33, 150, 243, 0.9);
 }

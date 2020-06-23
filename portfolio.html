@@ -60,21 +60,37 @@
         <div class="content-container">
             <section class="portfolio-section section">
                 <!-- ============ кнопки фильтра ================= -->
-                <ul class="list flex-container filter">
+                <ul class="list flex-container filter" role="group">
                     <li class="item">
-                        <button class="button-filter"> Все</button>
+                        <!--<button class="button-filter"> Все</button>-->
+                        <label>
+                            <input name="project-filter" type="radio" value="all" class="input-hidden">
+                            <span class="button-filter">Все</span>
+                        </label>
                     </li>
                     <li class="item">
-                        <button class="button-filter">Веб-сайты</button>
+                        <label>
+                            <input name="project-filter" type="radio" value="web" class="input-hidden">
+                            <span class="button-filter">Веб-сайты</span>
+                        </label>
                     </li>
                     <li class="item">
-                        <button class="button-filter">Приложения</button>
+                        <label>
+                            <input name="project-filter" type="radio" value="app" class="input-hidden">
+                            <span class="button-filter">Приложения</span>
+                        </label>
                     </li>
                     <li class="item">
-                        <button class="button-filter">Дизайн</button>
+                        <label>
+                            <input name="project-filter" type="radio" value="designe" class="input-hidden">
+                            <span class="button-filter">Дизайн</span>
+                        </label>
                     </li>
                     <li class="item">
-                        <button class="button-filter">Маркетинг</button>
+                        <label>
+                            <input name="project-filter" type="radio" value="marketing" class="input-hidden">
+                            <span class="button-filter">Маркетинг</span>
+                        </label>
                     </li>
                 </ul>
                 <!-- =============== галерея проектров ========================== -->
